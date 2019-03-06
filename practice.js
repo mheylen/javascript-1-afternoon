@@ -20,7 +20,7 @@ var lovesCode = true
 
 //Create a variable called greatestFear that is undefined because we fear nothing
 
-var = greatestFear = undefined
+var greatestFear = undefined
 
 //////////////////PROBLEM 5////////////////////
 
@@ -36,28 +36,28 @@ var devMountainGoal = null
 //plus the value of the name parameter.
 
 function greeting(name){
- return greeting;
+ return ("Hello,"+""+name);
 }
-console.log(greeting("Hello,"));
-
-
+greeting();
 
 //////////////////PROBLEM 7////////////////////
 
 //Rewrite the function greeting as a function expression.
 //Name it newGreeting.
 
-var greeting = function(name){
-  return greeting;
+var newGreeting = function(name){
+  return ("Hello,"+""+name);
 }
-console.log(greeting("Hello,"));
+newGreeting()
+
 
 //////////////////PROBLEM 8////////////////////
 
 //Rewrite the function greeting as an arrow function.
 //Name it finalGreeting.
 
-//Code Here
+var finalGreeting = (name) => {return ("Hello,"+""+name)}
+
 
 //////////////////PROBLEM 9////////////////////
 
@@ -73,12 +73,18 @@ var groceries = ["apples","milk","eggs","bread"]
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
-//Code Here
+var dog = {
+  name: "Fido",
+  color: "Pink",
+  age:40,
+  goodBoy: true
+}
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
 
-//Code Here
+var devMountainClassPet = dog.name;
+
 
 //////////////////PROBLEM 11////////////////////
 
@@ -89,7 +95,9 @@ var groceries = ["apples","milk","eggs","bread"]
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in
 
-// Code here
+function nameCheck(name){
+if(name==='Steven'){return "What is up Steven?"} if(name ==="Bryan") return{"HeyBryan!"} else {return "NAMEPARAM"}
+}
 
 //////////////////PROBLEM 12////////////////////
 
@@ -97,12 +105,18 @@ var groceries = ["apples","milk","eggs","bread"]
 // that will be numbers.
 // The add function should return the two parameters added together
 
-//Code Here
+function add(num1, num2){
+  return (num1 + num2)
+}
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
+var num1 = 3
+var num2 = 4
 
-//Code Here
+var mathSum = add()
+
+
 
 //////////////////PROBLEM 13////////////////////
 
@@ -113,7 +127,11 @@ var groceries = ["apples","milk","eggs","bread"]
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-// Code here
+function favColorFinder(color){
+  if(favColorFinder === 'red'){
+    return 'red is a great color'} else if (favColorFinder=== 'green'){
+      return 'green is a solid favorite color'} else if (favColorFinder==='black'){return 'so trendy'} else {'you need to evaluate your favorite color choice'}
+  }
 
 //////////////////PROBLEM 14////////////////////
 
@@ -137,16 +155,16 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["sailorDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["realDuck"];
 
 //////////////////PROBLEM 15////////////////////
 
@@ -157,8 +175,8 @@ var age = 32
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
 
-// Code Here
+var age = 32 + 1
 
 // Good news! We can live forever. Set your age to 999
 
-// Code Here
+age = 999
